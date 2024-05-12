@@ -15,6 +15,10 @@
 		C55D67412BEE310200868005 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C55D67402BEE310200868005 /* Base */; };
 		C55D674A2BEE340E00868005 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D67492BEE340E00868005 /* Configuration.swift */; };
 		C55D674C2BEE345800868005 /* ConfigurationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D674B2BEE345800868005 /* ConfigurationSample.swift */; };
+		C55D674E2BEE35C400868005 /* OpenAIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D674D2BEE35C400868005 /* OpenAIRequest.swift */; };
+		C55D67512BEE35EC00868005 /* OpenAIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D67502BEE35EC00868005 /* OpenAIResponse.swift */; };
+		C55D67532BEE360900868005 /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D67522BEE360900868005 /* OpenAIClient.swift */; };
+		C55D67552BF075FB00868005 /* ResponseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D67542BF075FB00868005 /* ResponseContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		C55D67422BEE310200868005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C55D67492BEE340E00868005 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		C55D674B2BEE345800868005 /* ConfigurationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationSample.swift; sourceTree = "<group>"; };
+		C55D674D2BEE35C400868005 /* OpenAIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIRequest.swift; sourceTree = "<group>"; };
+		C55D67502BEE35EC00868005 /* OpenAIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIResponse.swift; sourceTree = "<group>"; };
+		C55D67522BEE360900868005 /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
+		C55D67542BF075FB00868005 /* ResponseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				C55D673D2BEE310200868005 /* Assets.xcassets */,
 				C55D673F2BEE310200868005 /* LaunchScreen.storyboard */,
 				C55D67422BEE310200868005 /* Info.plist */,
+				C55D67522BEE360900868005 /* OpenAIClient.swift */,
+				C55D674D2BEE35C400868005 /* OpenAIRequest.swift */,
+				C55D67502BEE35EC00868005 /* OpenAIResponse.swift */,
+				C55D67542BF075FB00868005 /* ResponseContent.swift */,
 			);
 			path = ChatGPTWorkshop1;
 			sourceTree = "<group>";
@@ -144,11 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55D67532BEE360900868005 /* OpenAIClient.swift in Sources */,
 				C55D674C2BEE345800868005 /* ConfigurationSample.swift in Sources */,
 				C55D67392BEE310100868005 /* ViewController.swift in Sources */,
 				C55D674A2BEE340E00868005 /* Configuration.swift in Sources */,
+				C55D67512BEE35EC00868005 /* OpenAIResponse.swift in Sources */,
+				C55D67552BF075FB00868005 /* ResponseContent.swift in Sources */,
 				C55D67352BEE310100868005 /* AppDelegate.swift in Sources */,
 				C55D67372BEE310100868005 /* SceneDelegate.swift in Sources */,
+				C55D674E2BEE35C400868005 /* OpenAIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
