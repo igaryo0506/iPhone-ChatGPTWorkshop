@@ -6,3 +6,6 @@
 //
 
 import Foundation
+struct ConfigurationSample{
+    static let openAIAPIKey = "sk-hoge"
+}
