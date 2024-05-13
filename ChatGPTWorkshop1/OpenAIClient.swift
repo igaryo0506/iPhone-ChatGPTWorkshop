@@ -28,7 +28,7 @@ class OpenAIClient {
             .replacingOccurrences(of: " ", with: "")
         let systemMessage = "You are a helpful assistant designed to output JSON. Response should be the style of \(formattedData)"
         
-        let userMessage = "Please tell me 3 words similar to \(word)"
+        let userMessage = "指定された韓国語\(word)を日本語に訳した時に似た意味で、わかりやすい言葉で3つ提示してください。"
 
         let request = OpenAIRequest(
             model: "gpt-3.5-turbo",

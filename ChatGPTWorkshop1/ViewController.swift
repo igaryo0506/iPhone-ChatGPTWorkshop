@@ -10,19 +10,22 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet private var textField: UITextField!
     @IBOutlet private var resultLabels: [UILabel]!
-    private var resultsNum: Int = 0
+    private var resultsNum: Int = 100
     
     var client: OpenAIClient?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         resultsNum = resultLabels.count
-        client = .init(apiKey: Configuration.openAIAPIKey)
+        client = .init(apiKey: ConfigurationSample.openAIAPIKey)
     }
 
     @IBAction func search() {
         guard let text = textField.text else { return }
         client?.fetchSynonyms(for: text) { words in
+            
+            print(words)
+            
             if let words {
                 for index in 0..<self.resultsNum {
                     DispatchQueue.main.async {
